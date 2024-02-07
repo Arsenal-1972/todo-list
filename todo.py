@@ -35,18 +35,23 @@ while True:
   choice = int(input("1. Add\n2. Remove\n3. Clear\n4. Print list\n5. Show item by index"))
   if choice == 1:
     item = input("What you want to add?\n")
+    list.append(item)
     add(list, item)
     print_list(list)
   elif choice == 2:
     index = int(input("What you want to remove?\n"))
+    list.pop(index)
     remove(list, index)
     print_list(list)
   elif choice == 3:
+    list.clear()
     clear(list)
     print_list(list)
-  elif choice == 4:
-    print_list(list)
+  elif choice == 4: 
+    print(list)
   elif choice == 5:
+    index = int(input("What you want to see?\n"))
+    print(list[index])
     show(list)
   else:
     print("Invalid input")
