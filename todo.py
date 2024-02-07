@@ -50,7 +50,7 @@ while True:
   elif choice == 4: 
     print(list)
   elif choice == 5:
-    index = int(input("What you want to see?\n"))
+    index = int(input("What you want to observe?\n"))
     print(list[index])
     show(list)
   else:
